@@ -2,7 +2,6 @@
 
 ##  What Was the Problem?
 
-Your professor said:
 -  Binary classification works well (90% accuracy) - Can detect DR or No DR
 -  Multi-class classification is very poor (40-50% accuracy) - Cannot accurately classify severity levels
 
@@ -112,7 +111,6 @@ Total Improvement: +20-40% accuracy on multi-class!
 
 ##  How to Run in Your Notebook
 
-The code is added **at the end** of your `CAPSTON-SN (1).ipynb` file:
 
 ### Step-by-Step Execution
 
@@ -200,9 +198,9 @@ Result: Model treats all classes fairly,
 
 ---
 
-##  Which Model Should You Use?
+##  Which Model we used and y ?
 
-### For Your Presentation: Choose XGBoost
+### For our Presentation: Choosed XGBoost
 - Best accuracy (75-90%)
 - Fast enough for real deployment
 - Can explain feature importance
@@ -213,18 +211,18 @@ Result: Model treats all classes fairly,
 - Very interpretable
 - Still very accurate (70-85%)
 
-### If You Need Maximum Accuracy: Use Ensemble
+### for  Maximum Accuracy: Used Ensemble
 - Combine predictions from all 4 models
 - Vote-based or average predictions
 - Can get up to 92-95% accuracy!
 
 ---
 
-## Files You Have
+## Files we Have
 
 | File | Purpose |
 |------|---------|
-| `CAPSTON-SN (1).ipynb` | Main notebook with ALL code |
+| `CAPSTON-SN (3).ipynb` | Main notebook with ALL code |
 | `README.md` | This file - simple explanation |
 | `IMPROVEMENTS_GUIDE.md` | Detailed technical reference |
 | `train_images/` | Training retinal images |
@@ -232,7 +230,7 @@ Result: Model treats all classes fairly,
 
 ---
 
-## 🎓 Key Learnings
+##  Key Learnings
 
 ### **What Made the Biggest Difference:**
 1. **SMOTE Balancing** - Massive impact, fixes class imbalance
@@ -248,10 +246,10 @@ Result: Model treats all classes fairly,
 
 ---
 
-## ❓ Common Questions
+##  Common Questions asked were answered here
 
 ### Q: Why 4 models instead of just 1?
-**A:** Different models work better for different problems. By testing all 4, we find the best one for YOUR data.
+**A:** Different models work better for different problems. By testing all 4, we find the best one for OUR data.
 
 ### Q: Is SMOTE "cheating"?
 **A:** No! It's a standard technique in machine learning for imbalanced datasets. Used in healthcare, finance, etc.
@@ -267,9 +265,9 @@ Result: Model treats all classes fairly,
 
 ---
 
-## 🎬 Next Steps for Your Presentation
+n
 
-### **What to Show Your Professor:**
+### **What we Showed our Professor:**
 
 1. **Slide 1: The Problem**
    - Show original accuracy gap (90% binary vs 40% multi-class)
@@ -296,13 +294,13 @@ Result: Model treats all classes fairly,
 
 ---
 
-## 🛠️ Troubleshooting
+## 🛠️Troubleshooting
 
 ### **Issue: "ModuleNotFoundError: No module named 'xgboost'"**
 - **Solution**: Code automatically installs it in the notebook
 
 ### **Issue: "Feature extraction is too slow"**
-- **Solution**: Normal for 1000+ images. Go grab coffee ☕
+- **Solution**: Normal for 1000+ images. Go grab coffee 
 
 ### **Issue: "SVM training is taking too long"**
 - **Solution**: SVM is inherently slow. Can cancel and skip this model
@@ -312,34 +310,25 @@ Result: Model treats all classes fairly,
 
 ---
 
-## 📞 Summary
+##  Summary
 
 **What was done:**
-- ✅ Extracted 13 image features
-- ✅ Balanced classes with SMOTE
-- ✅ Normalized all data
-- ✅ Trained 4 different models with hyperparameter tuning
-- ✅ Compared all models side-by-side
-- ✅ Selected best performing model
+-  Extracted 13 image features
+- Balanced classes with SMOTE
+- Normalized all data
+- Trained 4 different models with hyperparameter tuning
+- Compared all models side-by-side
+- Selected best performing model
 
 **Expected outcome:**
-- ✅ Multi-class accuracy: 40% → 80-90%
-- ✅ Ready to present to professor
-- ✅ Production-ready solution
+-  Multi-class accuracy: 40% → 80-90%
+-  Ready to present to professor
+-  Production-ready solution
 
 **Time to run:**
-- ⏱️ ~40-70 minutes total
+-  ~40-70 minutes total
 
 ---
 
-## 📚 For More Details
-See `IMPROVEMENTS_GUIDE.md` for:
-- Detailed technical explanations
-- Parameter tuning details
-- Advanced ensemble techniques
-- Optional enhancements
 
----
 
-**Created**: December 11, 2025  
-**Status**: ✅ Ready to use and present!
